@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<link rel= "stylesheet" href= "{{ url_for('static',filename='main.css') }}">
+	<head>
+		<title>WordPress Version Status</title>
+	</head>
+
+
+	<body>
+		<h1>WordPress Version Status</h1>
+		<h2>WordPress latest version : {{ ref }} </h2>
+		<a href="{{ url_for('dynamic_pageall') }}"><button>Check all WordPress</button></a>
+		<div class="centered_div" ...>
+		{% if brand1 != [] %}
+		<table class="topazCells">
+			<thead>
+				<tr>
+				<th colspan="4">Brand1</th>
+				</tr>
+			</thead>			
+
+			{% for row in brand1 %}
+				<tr>
+					<td>{{ row[4] }}</td>
+					<td>{{ row[5] }}</td>
+					<td>{{ row[6] }}</td>
+					<td>{{ row[1] }}</td>
+				</tr>
+			{% endfor %}
+		</table>
+
+		{% else %}
+		<table class="topazCells">
+			<thead>
+				<tr>
+				<th>Brand1</th>
+				</tr>
+			</thead>
+				<tr>
+					<td>Nothing to see here !</td>
+				</tr>
+		</table>
+		{% endif %}
+
+		{% if brand2nok != [] %}
+		<table class="topazCells">
+				<thead>
+					<tr>
+						<th colspan="4">TJG</th>
+					</tr>
+			</thead>
+			{% for row in brand2nok %}	
+				<tr>
+					<td>{{ row[4] }}</td>
+					<td>{{ row[5] }}</td>
+					<td>{{ row[6] }}</td>
+					<td>{{ row[1] }}</td>
+				</tr>	
+			{% endfor %}
+		</table>
+		
+		{% else %}
+		<table class="topazCells">
+			<thead>
+				<tr>
+					<th>Brand3</th>
+				</tr>
+			</thead>
+				<tr>
+					<td>Nothing to see here !</td>
+				</tr>	
+		</table>
+		{% endif %}
+
+		{% if brand3 != [] %}
+		<table class="topazCells">
+			<thead>
+				<tr>
+					<th colspan="4">SAON</th>
+				</tr>
+			</thead>
+			{% for row in brand3 %}	
+				<tr>
+					<td>{{ row[4] }}</td>
+					<td>{{ row[5] }}</td>
+					<td>{{ row[6] }}</td>
+					<td>{{ row[1] }}</td>
+				</tr>				
+			{% endfor %}
+		</table>
+
+		{% else %}
+		<table class="topazCells">
+			<thead>
+				<tr>
+					<th>Brand3</th>
+				</tr>
+			</thead>	
+				<tr>
+					<td>Nothing to see here !</td>
+				</tr>	
+		</table>
+		{% endif %}
+		
+		{% if mixed != [] %}
+		<table class="topazCells">
+			<thead>
+				<tr>
+					<th colspan="4">Mixed</th>
+				</tr>
+			</thead>
+			{% for row in mixed %}	
+				<tr>
+					<td>{{ row[4] }}</td>
+					<td>{{ row[5] }}</td>
+					<td>{{ row[6] }}</td>
+					<td>{{ row[1] }}</td>
+				</tr>			
+			{% endfor %}
+		</table>
+
+		{% else %}
+		<table class="topazCells">
+			<thead>
+				<tr>
+					<th>Mixed</th>
+				</tr>
+			</thead>	
+				<tr>
+					<td>Nothing to see here !</td>
+				</tr>	
+		</table>
+		{% endif %}
+	</div>
+	</body>
+</html>

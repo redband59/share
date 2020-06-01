@@ -1,0 +1,78 @@
+table.topazCells {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0px solid #550505;
+  background-color: #858AAB;
+  text-align: center;
+  border-collapse: collapse;
+  display: inline-block;
+  vertical-align: top;
+}
+table.topazCells td, table.topazCells th {
+  border: 0px solid #555555;
+  padding: 4px 7px;
+}
+table.topazCells tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #E7E1E6;
+}
+table.topazCells thead {
+  background: #170AA4;
+  background: -moz-linear-gradient(top, #5147bb 0%, #2e22ad 66%, #170AA4 100%);
+  background: -webkit-linear-gradient(top, #5147bb 0%, #2e22ad 66%, #170AA4 100%);
+  background: linear-gradient(to bottom, #5147bb 0%, #2e22ad 66%, #170AA4 100%);
+  border-bottom: 0px solid #FFFFFF;
+}
+table.topazCells thead th {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 0px solid #000000;
+}
+table.topazCells thead th:first-child {
+  border-left: none;
+}
+
+table.topazCells tfoot td {
+  font-size: 13px;
+}
+table.topazCells tfoot .links {
+  text-align: right;
+}
+table.topazCells tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A43152;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+
+
+h1 {
+    color: red;
+    font-variant-caps: all-small-caps;
+    font-size: 46px;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    font-variant-caps: all-small-caps;
+    font-size: 20px;
+    text-align: center;
+}
+
+.centered_div {
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px; 
+}
+
+
+
+body {
+  text-align: center;
+  background-color: black;
+}
